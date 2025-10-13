@@ -1,12 +1,5 @@
 // src/components/Form/AIEnhanceButton.tsx
-import React from "react";
-import { useAIEnhancement } from "../../hooks/useAIEnhancement";
-
-export async function enhanceText(prompt: string) {
-
-  return improveText(prompt);
-  
-}
+import { useAIEnhancement } from "../../hooks/useAiEnhancement";
 
 
 type Props = {
