@@ -24,3 +24,14 @@ export type Skill = {
   name: string;
   level: "Básico" | "Intermediário" | "Avançado";
 };
+
+export type Education = {
+  id: string;
+  degree: string; // Grau (Bacharelado, Tecnólogo, etc.)
+  course: string; // Nome do curso
+  institution: string; // Nome da instituição
+  startDate: string;
+  endDate: string;
+  status: "Concluído" | "Cursando" | "Trancado"; // Status
+  description: string; // Atividades relevantes
+};

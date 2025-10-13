@@ -24,6 +24,7 @@ const initialCVData: CVData = {
   resume: "",
   skills: [],
   experiences: [],
+  education: [],
 };
 
 export function CVDataProvider({ children }: { children: ReactNode }) {

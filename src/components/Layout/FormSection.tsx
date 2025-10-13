@@ -1,5 +1,6 @@
 import { useCVData } from '../../hooks/useCVData';
 import PersonalInfo from "../Form/PersonalInfo";
+import EducationSection from "../Form/EducationSection";
 import SkillsSection from "../Form/Skills";
 import ExperiencesSection from "../Form/Experience";
 import logoImage from '../../assets/logo.png';
@@ -41,6 +42,7 @@ export default function FormSection() {
       <div className="space-y-12">
         <PersonalInfo />
         <SkillsSection />
+        <EducationSection />
         <ExperiencesSection />
       </div>
     </section>
