@@ -1,10 +1,11 @@
-import { useState } from "react";
 import { useCVData } from "../../hooks/useCVData";
 import { improveText } from "../../Services/aiServices";
+import { useState, type ChangeEvent } from "react";
+
 
 
 // Função para aplicar máscara de telefone
-const formatPhone = (value) => {
+const formatPhone = (value: string) => {
   // Remove tudo que não é número
   const numbers = value.replace(/\D/g, '');
   
@@ -70,7 +71,7 @@ export default function PersonalInfo() {
 
 
   // Função para lidar com mudanças no telefone
-  const handlePhoneChange = (e) => {
+  const handlePhoneChange = (e: ChangeEvent<HTMLInputElement>) => {
     const formatted = formatPhone(e.target.value);
     updateField("phone", formatted);
   };
@@ -114,7 +115,7 @@ export default function PersonalInfo() {
               className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
               value={cvData.phone}
               onChange={handlePhoneChange}
-              maxLength="15"
+              maxLength={15}
             />
           </span>
           <span>

@@ -7,6 +7,7 @@ export type CVData = {
   resume: string;
   skills: Skill[];
   experiences: Experience[];
+  education: Education[];
 };
 
 export type Experience = {
@@ -25,13 +26,14 @@ export type Skill = {
   level: "Básico" | "Intermediário" | "Avançado";
 };
 
+
 export type Education = {
   id: string;
-  degree: string; // Grau (Bacharelado, Tecnólogo, etc.)
-  course: string; // Nome do curso
-  institution: string; // Nome da instituição
+  degree: string;
+  course: string;
+  institution: string;
   startDate: string;
   endDate: string;
-  status: "Concluído" | "Cursando" | "Trancado"; // Status
-  description: string; // Atividades relevantes
+  status: "Concluído" | "Cursando" | "Trancado";
+  description: string;
 };

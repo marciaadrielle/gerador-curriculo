@@ -87,8 +87,9 @@ export default function EducationSection() {
       <div className="form-group space-y-2">
         <div className="grid grid-cols-2 gap-4">
           <span className="grid gap-2">
-            <label className="form-label">Grau</label>
+            <label htmlFor="degree" className="form-label">Grau</label>
             <select
+              id="degree"
               className="form-input"
               value={degree}
               onChange={(e) => setDegree(e.target.value)}
@@ -151,8 +152,9 @@ export default function EducationSection() {
             />
           </div>
           <div className="grid gap-2">
-            <label className="form-label">Status</label>
+            <label htmlFor="status" className="form-label">Status</label>
             <select
+              id="status"
               className="form-input"
               value={status}
               onChange={(e) => setStatus(e.target.value as "Concluído" | "Cursando" | "Trancado")}
